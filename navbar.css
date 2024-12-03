@@ -1,0 +1,125 @@
+/* Navbar Styles */
+.navbar.hidden {
+    opacity: 0;
+}
+
+
+header {
+    display: flex;
+}
+
+.profile-icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon-container:hover .hover-effect {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+}
+
+.profile-icon-container a {
+    display: flex;
+    align-items: center;
+    padding:5px;
+}
+
+.profile-icon-container a img {
+    width: 50px;
+    height: 50px;
+}
+
+.profile-icon-container a img:hover {
+    animation: Animation 2s ease-in-out 0s ;
+}
+
+.hover-effect{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 4em;
+    left:5em;
+    gap: 20px;
+    background: #3f3e665e;
+    backdrop-filter: blur(10px);
+    padding: 8px;
+    border-radius: 12px;
+    opacity:0;
+    transform: translate(-100%, -100%) scale(0);
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+/* @keyframes Animation {
+    from {
+        height: 50px;
+        width: 50px;
+    }
+    to {
+        height: 600px;
+        width: 600px;
+    }
+} */
+
+nav {
+    height: 80px;
+    width: 100%;
+    top: 0;
+    padding: 10px;
+    background-color: rgba(18, 18, 62, 0.6);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+.nav-links {
+    margin: 0px 23px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav-links:hover {
+
+    color: rgb(153, 153, 226);
+}
+
+.left {
+    display: flex;
+    font-size: 2rem;
+    color: rgb(120, 120, 218);
+}
+
+/* #navbar {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+} */
+/* 
+#navbar.hidden {
+    transform: translateY(-100%); Move navbar out of view
+    opacity: 0; Fade out
+} */
+
+
+@media (max-width:1024px) {
+    .navbar h1 {
+        font-size: xx-large;
+        text-wrap: nowrap;
+    }
+
+}

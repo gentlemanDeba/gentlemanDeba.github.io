@@ -1,0 +1,98 @@
+/* About Styles*/
+
+.AboutSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 20px;
+    padding: 30px;
+    background-color: rgb(18, 18, 62);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.AboutSection h2 {
+    color: aquamarine;
+    font-size: 2.2rem;
+    width: fit-content;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.AboutSection a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.about-text {
+    color: rgb(221, 238, 244);
+    margin: 20px 15%;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+.about-skills {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.about-skills a {
+    background-color: rgb(30, 30, 80);
+    margin: 0px 25px;
+    border-radius: 14px;
+    transition: all .5s ease;
+    box-shadow: rgba(0, 0, 0, 0.239) 0 2px 6px;
+}
+
+.skill-items {
+    width: 276px;
+    margin: 20px 20px;
+}
+
+.about-skills a:hover {
+    transform: scale(1.1);
+    background-color: rgb(50, 50, 154);
+}
+
+.item-image {
+    height: 237px;
+    width: 276px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.item-text {
+    margin-top: 16px;
+}
+
+.item-text h3 {
+    margin-bottom: 8px;
+}
+
+.item-grad {
+    color: lightblue;
+    font-size: 1.2rem;
+    width: fit-content;
+}
+
+.item-text p {
+    color: rgb(221, 238, 244);
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.5;
+}
