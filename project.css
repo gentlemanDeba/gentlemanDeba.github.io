@@ -17,8 +17,8 @@
 }
 
 .Project-Container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 20px;
     padding-top: 30px;
@@ -30,6 +30,7 @@
     padding: 20px;
     border-radius: 14px;
     width: auto;
+    flex: 1;
     display: grid;
     align-items: center;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
@@ -74,4 +75,10 @@
 .download-btn:hover {
     /* background-color: orange; */
     background-color: green;
+}
+
+@media screen and (max-width: 700px) {
+    .Project-Container {
+        flex-direction: column;
+    }
 }

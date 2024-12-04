@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="skill.css">
     <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="footer.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -30,33 +29,50 @@
                     </a>
                     <div class="hover-effect">
                         <img src="Images/ProfilePic.JPG" style="width: 200px; border-radius: 10px;" alt="">
-                        <h1 style="text-align: center; line-height: 1; color: antiquewhite;">DEBASIS<br>GANGULY</h1>
+                        <h1 style="text-align: center; line-height: 1; color: antiquewhite;">Debasis<br>Ganguly</h1>
                     </div>
                 </div>
                 <h1>Deba's Portfolio</h1>
             </div>
-        </div>
-        <button class="hamburger" aria-label="Toggle navigation menu">
+            </div>
+            <!-- <button class="hamburger" aria-label="Toggle navigation menu">
             <img src="Images/hamburger.png" alt="">
-        </button>
+        </button> -->
             <div class="right">
                 <ul>
                     <li><a href="#home" class="nav-links" aria-label="Navigate to Home">Home</a></li>
                     <li><a href="#about" class="nav-links" aria-label="Navigate to About Section">About</a></li>
                     <li><a href="#skills" class="nav-links" aria-label="Navigate to Skills Section">Skills</a></li>
-                    <li><a href="#projects" class="nav-links" aria-label="Navigate to Projects Section">Projects</a><li>
-                    <li><a href="#contact" class="nav-links" aria-label="Navigate to Contact Me Section">Contact Me</a></li>
+                    <li><a href="#projects" class="nav-links" aria-label="Navigate to Projects Section">Projects</a>
+                    <li>
+                    <li><a href="#contact" class="nav-links" aria-label="Navigate to Contact Me Section">Contact Me</a>
+                    </li>
                 </ul>
             </div>
+
+            <button class="navbar_menu" id="navbarOpener">
+                <img src="/Images/dropdown-select.svg" alt="">
+            </button>
         </nav>
     </header>
+
+    <div class="nav-sidebar">
+        <ul class="sidebar-links">
+            <li><a href="#home" class="nav-links">Home</a></li>
+            <li><a href="#about" class="nav-links">About</a></li>
+            <li><a href="#skills" class="nav-links">Skills</a></li>
+            <li><a href="#projects" class="nav-links">Projects</a>
+            <li><a href="#contact" class="nav-links">Contact Me</a></li>
+        </ul>
+
+    </div>
 
     <main>
         <section class="FirstSection" id="home">
             <div class="leftsection">
                 <h1>Hi!🖐️</h1> My name is <span class="Name">Debasis</span>
                 <div>
-                    I'm <span id="element"></span>
+                    I'm <span class="typer" id="element"></span>
                 </div>
                 <a href="DG-cv.pdf" download="Debasis_Resume" class="resume-download-btn">Download Resume</a>
             </div>
@@ -200,40 +216,6 @@
             </div>
         </section>
 
-        <!-- <section id="resume" class="ResumeSection">
-            <h2>My Resume</h2>
-            <div class="ResumeContainer">
-                <div class="ResumeItem">
-                    <h3>Education</h3>
-                    <p><strong>Bachelor's Degree:</strong> Computer Science, Visva-Bharati University (2022-Present)</p>
-                    <p><strong>School Certificate (10th):</strong> Siksha-Satra, Visva-Bharati (2009-2020)</p>
-                    <p><strong>Pre Degree (12th):</strong> Siksha-Satra, Visva-Bharati (2020-2022)</p>
-                </div>
-                <div class="ResumeItem">
-                    <h3>Experience</h3>
-                    <p><strong>Freelancer:</strong> Web Developer & Creative Designer (2022-Present)</p>
-                    <p><strong>Business:</strong>
-                    <ul>
-                        <li>Advisor, Reliance-Nippon Life Insurance Corporation (2024-Present)</li>
-                        <li>Commercial Vehicle Owner at Bengal Bus Owners Association (2021-Present)</li>
-                    </ul>
-                    </p>
-                </div>
-                <div id="skills" class="ResumeItem">
-                    <h3>Skills</h3>
-                    <p>- HTML, CSS, JavaScript</p>
-                    <p>- Python, C, Java</p>
-                    <p>- Git & GitHub, MySQL</p>
-                </div>
-                <div class="ResumeItem">
-                    <h3>Certifications</h3>
-                    <p>- Full-Stack Web Developer, Udemy</p>
-                    <p>- The Data Analyst Course, Udemy</p>
-                    <p>- CITA & DITA, West Bengal Youth Computer Training Centre</p>
-                </div>
-            </div>
-            <a href="resume.pdf" download="Debasis_Resume" class="download-btn">Download Resume</a>
-        </section> -->
 
     </main>
 
@@ -310,8 +292,10 @@
             typeSpeed: 100,
             backSpeed: 50,
             loop: true,
+
         });
     </script>
+    <script type="module" src="/script.js"></script>
 </body>
 
 </html>

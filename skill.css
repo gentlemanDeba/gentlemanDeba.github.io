@@ -68,3 +68,42 @@
     font-size: 1.2rem;
     width: fit-content;
 }
+
+@media screen and (max-width: 1280px) {
+    .skill-info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 840px) {
+    .skill-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skill-info-items {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .skill-info {
+        gap: 10px;
+    }
+
+    .skill-info-items {
+        width: 180px;
+        padding-left: 0;
+    }
+
+    .skill-info-items h3 {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+    .skill-info-items {
+        width: 160px;
+    }
+}

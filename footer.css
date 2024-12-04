@@ -7,6 +7,10 @@
 
       .footer-container {
           display: flex;
+
+          flex-direction: row;
+
+
           justify-content: space-between;
           align-items: center;
           flex-wrap: wrap;
@@ -54,7 +58,7 @@
       }
 
       .footer-logo {
-          width: 6%;
+          max-width: 20px;
       }
 
       .footer-right {
@@ -87,4 +91,24 @@
           padding-top: 20px;
           font-size: 0.9rem;
           color: rgb(153, 153, 226);
+      }
+
+      @media screen and (max-width: 840px) {
+          .footer-container {
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: center;
+              text-align: center;
+          }
+
+          .footer-right {
+              text-align: center;
+          }
+
+          /* .footer-center{
+            font-size: 16px;
+          }
+          .footer-right{
+            font-size: 16px;
+          } */
       }
