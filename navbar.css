@@ -1,11 +1,10 @@
 /* Navbar Styles */
-.navbar.hidden {
-    opacity: 0;
-}
-
-
 header {
     display: flex;
+}
+
+.navbar.hidden {
+    opacity: 0;
 }
 
 .profile-icon-container {
@@ -29,9 +28,9 @@ header {
     height: 50px;
 }
 
-.profile-icon-container a img:hover {
+/* .profile-icon-container a img:hover {
     animation: Animation 2s ease-in-out 0s ;
-}
+} */
 
 .hover-effect{
     position: absolute;
