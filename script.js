@@ -1,41 +1,47 @@
-// const navbar = document.getElementById("navbar");
-// let timeout;
+const navbar = document.getElementById("navbar");
+let timeout;
 
-// // Function to hide the navbar
-// const hideNavbar = () => {
-//     navbar.classList.add("hidden");
-// };
+const hideNavbar = () => {
+    navbar.classList.add("hidden");
+};
 
-// // Function to show the navbar
-// const showNavbar = () => {
-//     navbar.classList.remove("hidden");
-// };
+const showNavbar = () => {
+    navbar.classList.remove("hidden");
+};
 
-// // Function to reset the inactivity timer
-// const resetTimer = () => {
-//     // Show the navbar on activity
-//     showNavbar();
+const resetTimer = () => {
+    showNavbar();
+    clearTimeout(timeout);
+    timeout = setTimeout(hideNavbar, 3000);
+};
 
-//     // Clear any existing timeout
-//     clearTimeout(timeout);
-
-//     // Set a new timeout to hide the navbar after 3 seconds
-//     timeout = setTimeout(hideNavbar(), 3000);
-// };
-
-// // Listen for user activity (mouse, keyboard, touch)
-// ["mousemove", "keydown", "scroll", "touchstart"].forEach((event) => {
-//     window.addEventListener(event, resetTimer);
-// });
-
-// // Start the timer when the page loads
-// resetTimer();
+["mousemove", "keydown", "scroll", "touchstart"].forEach((event) => {
+    window.addEventListener(event, resetTimer);
+});
+resetTimer();
 
 
 const sidebar = document.querySelector(".nav-sidebar")
 const navbarButton = document.getElementById("navbarOpener")
 
-navbarButton.addEventListener('click', () => {
+navbarButton.addEventListener('click', (event) => {
+    // Prevent the event from propagating to the document listener
+    event.stopPropagation();
+
+    // Toggle the sidebar and button rotation
     sidebar.classList.toggle("visible");
     navbarButton.classList.toggle("rotate");
-})
+});
+
+// Close the sidebar if clicking anywhere else on the document
+document.addEventListener('click', () => {
+
+    if (sidebar.classList.contains("visible")) {
+        sidebar.classList.remove("visible");
+        navbarButton.classList.remove("rotate");
+    }
+});
+
+sidebar.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent closing when clicking inside the sidebar
+});

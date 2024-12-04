@@ -7,10 +7,7 @@
 
       .footer-container {
           display: flex;
-
           flex-direction: row;
-
-
           justify-content: space-between;
           align-items: center;
           flex-wrap: wrap;
@@ -32,6 +29,7 @@
 
       .footer-left {
           list-style: none;
+
       }
 
       .footer-link {
@@ -103,12 +101,9 @@
 
           .footer-right {
               text-align: center;
-          }
+              display: flex;
+              flex-direction: column;
+              width: fit-content;
 
-          /* .footer-center{
-            font-size: 16px;
           }
-          .footer-right{
-            font-size: 16px;
-          } */
       }
