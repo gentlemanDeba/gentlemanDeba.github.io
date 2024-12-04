@@ -1,155 +1,66 @@
-       * {
-           margin: 0;
-           padding: 0;
-           box-sizing: border-box;
-           scroll-behavior: smooth;
-       }
-
-
-       body {
-           background-color: rgba(0, 0, 33);
-           color: white;
-           font-family: 'Poppins', 'Rubik', sans-serif;
-           line-height: 1.6;
-           z-index: 1000;
-       }
-
-       .FirstSection {
-           display: flex;
-           justify-content: space-around;
-           margin: 90px 0px;
-           margin-bottom: 150px;
-       }
-
-       .FirstSection>div {
-           width: 40%;
-           margin: 50px 0px;
-           align-content: center;
-       }
-
-       .leftsection {
-           font-size: 2.5rem;
-       }
-
-       .rightsection img {
-           width: 100%;
-           border-radius: 8px;
-       }
-
-       .Name {
-           color: peru;
-           font-size: 3.5rem;
-           font-weight: 600;
-       }
-
-       #element {
-           color: aquamarine;
-       }
-
-
-       /* .ResumeSection {
-           margin: 50px 20px;
-           padding: 30px;
-           background-color: rgb(18, 18, 62);
-           border-radius: 10px;
-           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-       }
-
-       .ResumeSection h2 {
-           text-align: center;
-           color: aquamarine;
-           margin-bottom: 20px;
-           font-size: 2.2rem;
-       }
-
-       .ResumeContainer {
-           display: flex;
-           flex-wrap: wrap;
-           justify-content: space-between;
-           gap: 20px;
-       }
-
-       .ResumeItem {
-           background-color: rgb(30, 30, 80);
-           padding: 20px;
-           border-radius: 8px;
-           width: calc(50% - 10px);
-           transition: transform 0.3s ease, box-shadow 0.3s ease;
-       }
-
-       .ResumeItem ul li {
-           margin-left: 50px;
-       }
-
-       .ResumeItem:hover {
-           transform: translateY(-10px);
-           box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
-           font-size: 1.001em;
-           transition-duration: 0.3s;
-           transition-timing-function: ease-in;
-       }
-
-       .ResumeItem h3 {
-           color: lightblue;
-           font-size: 1.5rem;
-           margin-bottom: 10px;
-       }
-
-       .ResumeItem p {
-           margin-bottom: 10px;
-           color: white;
-       }
-
-       .ResumeSection {
-           animation: fadeIn 1.5s ease-in-out;
-       }
-
-       .download-btn {
-           display: block;
-           text-align: center;
-           background-color: peru;
-           color: white;
-           text-decoration: none;
-           padding: 10px 20px;
-           border-radius: 5px;
-           margin: 20px auto 0;
-           width: fit-content;
-           transition: background-color 0.3s ease;
-       }
-
-       .download-btn:hover {
-           background-color: orange;
-       } */
-
-       @media (max-width: 768px) {
-           .ResumeItem {
-               width: 100%;
-               /* Make Resume items stack vertically */
-           }
-
-           nav ul li a {
-               margin: 0 10px;
-               /* Reduce margin for smaller screens */
-           }
-       }
-
-
-       @keyframes fadeIn {
-           from {
-               opacity: 0;
-               transform: translateY(20px);
-           }
-
-           to {
-               opacity: 1;
-               transform: translateY(0);
-           }
-       }
-
-       
-@media (max-width:1024px) {
-    
-    .leftsection {
-        font-size: x-large;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
+
+body {
+    background-color: rgba(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', 'Rubik', sans-serif;
+    line-height: 1.6;
+    z-index: 1000;
+}
+
+.FirstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 90px 0px;
+    margin-bottom: 150px;
+}
+
+.FirstSection>div {
+    width: 40%;
+    margin: 50px 0px;
+    align-content: center;
+}
+
+.leftsection {
+    font-size: 2.5rem;
+}
+
+.rightsection img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.Name {
+    color: peru;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+#element {
+    color: aquamarine;
+}
+
+.resume-download-btn {
+ display: inline-block;
+ text-align: center;
+ background-color: rgb(238, 144, 51);
+ color: white;
+ text-decoration: none;
+ padding: 10px 20px;
+ border-radius: 5px;
+ margin-top: 30px;
+ width: fit-content;
+ transition: background-color 0.3s ease;
+ font-size: 16px;
+}
+
+.resume-download-btn:hover {
+    background-color: green;
+}
+
